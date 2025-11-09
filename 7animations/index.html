@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mutonya Church Interactive Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Mutonya Church</h1>
+    <p id="verseDisplay">“The Lord is my shepherd; I shall not want.” – Psalm 23:1</p>
+    <button id="verseBtn">Get Random Verse</button>
+  </section>
+
+  <!-- Interactive Card Section -->
+  <section class="cards">
+    <div class="card" id="card1">
+      <div class="card-front">Upcoming Event</div>
+      <div class="card-back">Sunday Service at 10 AM</div>
+    </div>
+  </section>
+
+  <!-- Modal / Prayer Request -->
+  <button id="openModal">Submit Prayer Request</button>
+  <div class="modal" id="prayerModal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2>Submit Your Prayer Request</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required><br><br>
+        <textarea placeholder="Your Prayer Request" required></textarea><br><br>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
